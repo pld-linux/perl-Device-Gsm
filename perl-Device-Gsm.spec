@@ -6,7 +6,7 @@
 %define pdir    Device
 %define pnam    Gsm
 Summary:	Device::Gsm - a Perl class for GSM
-Summary(pl):	Device::Gsm - interface do obs³ugi GSM
+Summary(pl):	Device::Gsm - perlowy interfejs do obs³ugi GSM
 Name:		perl-Device-Gsm
 Version:	1.36
 Release:	1
@@ -19,14 +19,13 @@ BuildRequires:	perl-Device-Modem
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is a perl extension to talk to GSM modems.
+This is a Perl extension to talk to GSM modems.
 
 %description -l pl
-Jest to rozszerzenie modu³u do obs³ugi urz±dzeñ GSM.
+Jest to rozszerzenie Perla do obs³ugi modemów GSM.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-
 
 %build
 %{__perl} Makefile.PL \
@@ -46,8 +45,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Change* README
 %{perl_vendorlib}/Device/*.pm
+%dir %{perl_vendorlib}/Device/Gsm
 %{perl_vendorlib}/Device/Gsm/*.pm
+%dir %{perl_vendorlib}/Device/Gsm/Sms
 %{perl_vendorlib}/Device/Gsm/Sms/*.pm
+%dir %{perl_vendorlib}/Device/Gsm/Sms/Token
 %{perl_vendorlib}/Device/Gsm/Sms/Token/*.pm
-
 %{_mandir}/man3/*
