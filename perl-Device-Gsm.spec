@@ -1,10 +1,10 @@
 #
 # Conditional build:
-%bcond_with     tests   # perform "make test" (uses serial port)
+%bcond_with	tests	# perform "make test" (uses serial port)
 #
-%include        /usr/lib/rpm/macros.perl
-%define pdir    Device
-%define pnam    Gsm
+%include	/usr/lib/rpm/macros.perl
+%define		pdir	Device
+%define		pnam	Gsm
 Summary:	Device::Gsm - a Perl class for GSM
 Summary(pl):	Device::Gsm - perlowy interfejs do obs³ugi GSM
 Name:		perl-Device-Gsm
@@ -36,7 +36,7 @@ Jest to rozszerzenie Perla do obs³ugi modemów GSM.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-        DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
