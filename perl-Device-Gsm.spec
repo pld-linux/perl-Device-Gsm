@@ -8,13 +8,13 @@
 Summary:	Device::Gsm - a Perl class for GSM
 Summary(pl.UTF-8):	Device::Gsm - perlowy interfejs do obsługi GSM
 Name:		perl-Device-Gsm
-Version:	1.48
+Version:	1.52
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Device/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	422c4f1faa7c1d435df1802f634a62a4
+# Source0-md5:	bade8ead37875e0d3724c028d34e0a1a
 URL:		http://search.cpan.org/dist/Device-Gsm/
 BuildRequires:	perl-Device-Modem
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
