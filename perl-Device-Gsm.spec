@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test" (uses serial port)
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Device
 %define		pnam	Gsm
 Summary:	Device::Gsm - a Perl class for GSM
